@@ -1,0 +1,226 @@
+Matched Shingle,Entities,Shingle Type,Entity Type,Search Query,Visits,Revenue,Overlap,Entity Overlaps,Entity Type Overlaps
+align,align,full,full,"align 4""",1558,"$13,599.70",no,1,1
+"4""","4""",full,full,"align 4""",1558,"$13,599.70",no,1,1
+light,Heathered Core Ultra Light Grey|Nevis Stripe Grey Sage Light Sage|Light Vapor|Heathered Ultra Light Grey|Heathered Core Light Grey|Kayak Blue Light|Flash Light|Light Quicksand|Heather Allover Sea Salt Light Cast,partial,partial,light house,1742024,"$12,485,038.56",yes,9,1
+belt,Belt Bags,partial,partial,belt bag,1742024,"$12,485,038.56",no,1,1
+bag,Duffle Bags|Yoga Bags|Crossbody Bags|Belt Bags,partial,full|partial,belt bag,1742024,"$12,485,038.56",yes,5,2
+scuba,scuba,full,full,scuba,1905345,"$10,433,488.09",no,1,1
+shorts,Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,partial|full,shorts,572888,"$2,093,359.94",yes,7,2
+define,define,full,full,define jacket,462670,"$3,566,816.44",no,1,1
+jacket,Athletic Jackets|Rain Jackets|Puffer Jackets|Bomber Jackets,partial,partial|full,define jacket,462670,"$3,566,816.44",yes,5,2
+align,align,full,full,align,417267,"$4,948,056.73",no,1,1
+leggings,leggings,full,full,leggings,351252,"$2,511,427.32",no,1,1
+swiftly,swiftly,full,full,swiftly,296633,"$1,591,910.14",no,1,1
+backpack,backpack,full,full,backpack,240073,"$1,760,761.90",no,1,1
+bag,Duffle Bags|Yoga Bags|Crossbody Bags|Belt Bags,partial,full|partial,bag,237409,"$1,544,662.36",yes,5,2
+skirt,Athletic Skirts,partial,full|partial,skirt,191756,"$950,809.75",yes,2,2
+everywhere,everywhere,full,full,everywhere belt bag,207788,"$1,438,011.22",no,1,1
+belt,Belt Bags,partial,partial,everywhere belt bag,207788,"$1,438,011.22",no,1,1
+bag,Duffle Bags|Yoga Bags|Crossbody Bags|Belt Bags,partial,full|partial,everywhere belt bag,207788,"$1,438,011.22",yes,5,2
+align,align,full,full,align tank,225922,"$1,190,313.39",no,1,1
+tank,Tank Tops,partial,partial,align tank,225922,"$1,190,313.39",no,1,1
+align,align,full,full,align leggings,174881,"$2,091,488.85",no,1,1
+leggings,leggings,full,full,align leggings,174881,"$2,091,488.85",no,1,1
+swiftly,swiftly,full,full,swiftly tech,176779,"$1,156,425.87",no,1,1
+tech,Metal Vent Tech,partial,partial,swiftly tech,176779,"$1,156,425.87",no,1,1
+we,We Made Too Much,partial,partial,we made too much,119687,"$592,076.05",no,1,1
+we made,We Made Too Much,partial,partial,we made too much,119687,"$592,076.05",no,1,1
+we made too,We Made Too Much,partial,partial,we made too much,119687,"$592,076.05",no,1,1
+we made too much,we made too much,full,full,we made too much,119687,"$592,076.05",no,1,1
+made,We Made Too Much,partial,partial,we made too much,119687,"$592,076.05",no,1,1
+made too,We Made Too Much,partial,partial,we made too much,119687,"$592,076.05",no,1,1
+made too much,We Made Too Much,partial,partial,we made too much,119687,"$592,076.05",no,1,1
+too,We Made Too Much,partial,partial,we made too much,119687,"$592,076.05",no,1,1
+too much,We Made Too Much,partial,partial,we made too much,119687,"$592,076.05",no,1,1
+much,We Made Too Much,partial,partial,we made too much,119687,"$592,076.05",no,1,1
+hotty,Hotty Hot,partial,partial,hotty hot,155874,"$910,585.98",no,1,1
+hotty hot,hotty hot,full,full,hotty hot,155874,"$910,585.98",no,1,1
+hot,Hot Heat|Hotty Hot,partial,partial,hotty hot,155874,"$910,585.98",yes,2,1
+define,define,full,full,define,168830,"$1,551,166.64",no,1,1
+bags,Duffle Bags|Yoga Bags|Crossbody Bags|Belt Bags,partial,full|partial,bags,124248,"$828,463.01",yes,5,2
+keychain,keychain,full,full,keychain,162765,"$481,656.36",no,1,1
+bra,Sports Bras|Racerback Bras,partial,partial,bra,97857,"$532,293.96",yes,2,1
+speed,Speed Up|Swift Speed,partial,partial,speed up,97005,"$464,907.25",yes,2,1
+speed up,speed up,full,full,speed up,97005,"$464,907.25",no,1,1
+up,Speed Up|Zip Up Sweatshirts,partial,partial,speed up,97005,"$464,907.25",yes,2,1
+align,align,full,full,align shorts,84762,"$481,719.46",no,1,1
+shorts,Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,partial|full,align shorts,84762,"$481,719.46",yes,7,2
+jacket,Athletic Jackets|Rain Jackets|Puffer Jackets|Bomber Jackets,partial,partial|full,jacket,105918,"$904,445.74",yes,5,2
+hotty,Hotty Hot,partial,partial,hotty hots,84926,"$156,386.10",no,1,1
+tank,Tank Tops,partial,partial,tank top,92157,"$297,975.90",no,1,1
+top,Tank Tops|Swimsuit Tops,partial,partial,tank top,92157,"$297,975.90",yes,2,1
+tank,Tank Tops,partial,partial,tank tops,79056,"$281,269.70",no,1,1
+tank tops,tank tops,full,full,tank tops,79056,"$281,269.70",no,1,1
+tops,Tank Tops|Swimsuit Tops,partial,partial,tank tops,79056,"$281,269.70",yes,2,1
+dress,Dress Pants|Bodycon Dresses|Shirt Dresses,partial,partial|full,dress,71390,"$437,676.89",yes,4,2
+shirts,Short Sleeve Shirts|Long Sleeve Shirts|Button Down Shirts|Polo Shirts,partial,partial|full,shirts,89858,"$244,266.38",yes,5,2
+wallet,Wallets and Pouches,partial,partial,wallet,107961,"$509,294.75",no,1,1
+backpacks,backpacks,full,full,backpacks,76478,"$695,347.15",no,1,1
+tank,Tank Tops,partial,partial,tank,81046,"$404,637.91",no,1,1
+water,Water Bottles|Water Drop,partial,partial,water bottle,101085,"$381,745.55",yes,2,1
+joggers,joggers,full,full,joggers,86410,"$878,731.03",no,1,1
+skirts,Athletic Skirts,partial,full|partial,skirts,62987,"$281,608.62",yes,2,2
+shirt,Shirt Dresses|Short Sleeve Shirts|Long Sleeve Shirts|Button Down Shirts|Polo Shirts,partial,partial|full,shirt,79573,"$202,436.45",yes,6,2
+hotty,Hotty Hot,partial,partial,hotty hotty shorts,75751,"$551,988.95",no,1,1
+hotty,Hotty Hot,partial,partial,hotty hotty shorts,75751,"$551,988.95",no,1,1
+shorts,Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,partial|full,hotty hotty shorts,75751,"$551,988.95",yes,7,2
+dance,Dance Studio,partial,partial|full,dance studio,99429,"$1,220,866.85",yes,2,2
+dance studio,dance studio,full,full,dance studio,99429,"$1,220,866.85",no,1,1
+studio,Dance Studio,partial,partial,dance studio,99429,"$1,220,866.85",no,1,1
+pants,5 Pocket Pants|Cargo Pants|Dress Pants,partial,partial|full,pants,72508,"$453,982.67",yes,4,2
+sonic,Sonic Pink|Sonic Yellow,partial,partial,sonic pink,61445,"$321,732.17",yes,2,1
+sonic pink,sonic pink,full,full,sonic pink,61445,"$321,732.17",no,1,1
+pink,Sonic Pink|Flush Pink|Meadowsweet Pink|Pink Peony|Glaze Pink|Heathered Glaze Pink|Pink Pastel|Pink Clay|Pink Mist|Dew Pink|Flower Glide Max Pink Multi|Pow Pink|Sakura Pink|Azalea Pink|Vintage Pink|Ombre Glide Washed Mauve Sakura Pink Peach Bellini|NOUVEAU MARBLE Meadow Sweet Pink Multi|Pink Lychee|Pink Puff|Highlight Pink|butter pink|Heathered Meadowsweet Pink|Incognito Camo Pink Taupe Multi|Inline Stripe White Heathered Pink Peony|Gossamer Floral Vita Pink Multi|Pink Glow|pink sorbet,partial,partial|full,sonic pink,61445,"$321,732.17",yes,28,2
+pack,Packing Cubes,partial,partial,fanny pack,72109,"$442,311.88",no,1,1
+sports,Sports Bras,partial,partial,sports bra,69850,"$482,212.65",no,1,1
+bra,Sports Bras|Racerback Bras,partial,partial,sports bra,69850,"$482,212.65",yes,2,1
+swiftly,swiftly,full,full,swiftly top,58593,"$282,759.90",no,1,1
+top,Tank Tops|Swimsuit Tops,partial,partial,swiftly top,58593,"$282,759.90",yes,2,1
+swiftly,swiftly,full,full,swiftly tech shirts,62483,"$381,891.50",no,1,1
+tech,Metal Vent Tech,partial,partial,swiftly tech shirts,62483,"$381,891.50",no,1,1
+shirts,Short Sleeve Shirts|Long Sleeve Shirts|Button Down Shirts|Polo Shirts,partial,partial|full,swiftly tech shirts,62483,"$381,891.50",yes,5,2
+hat,Bucket Hats,partial,partial|full,hat,58711,"$319,620.68",yes,2,2
+we,We Made Too Much,partial,partial,we made to much,37765,"$86,045.40",no,1,1
+we made,We Made Too Much,partial,partial,we made to much,37765,"$86,045.40",no,1,1
+made,We Made Too Much,partial,partial,we made to much,37765,"$86,045.40",no,1,1
+to,License To Train|Built To Move|Ebb to Street|Free to Be|Ready to Rulu,partial,partial,we made to much,37765,"$86,045.40",yes,5,1
+much,We Made Too Much,partial,partial,we made to much,37765,"$86,045.40",no,1,1
+wunder,Wunder Train|Wunder Puff|Wunder Under,partial,partial,wunder train,66933,"$727,199.74",yes,3,1
+wunder train,wunder train,full,full,wunder train,66933,"$727,199.74",no,1,1
+train,License To Train|Wunder Train|Cross Training Shoes,partial,partial|full,wunder train,66933,"$727,199.74",yes,4,2
+lip,Lip Gloss,partial,partial,lip gloss,43543,"$204,722.58",no,1,1
+lip gloss,lip gloss,full,full,lip gloss,43543,"$204,722.58",no,1,1
+gloss,Lip Gloss,partial,partial,lip gloss,43543,"$204,722.58",no,1,1
+shorts,Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,partial|full,biker shorts,51024,"$146,760.05",yes,7,2
+hot,Hot Heat|Hotty Hot,partial,partial,hot hotty,53054,"$240,317.30",yes,2,1
+hotty,Hotty Hot,partial,partial,hot hotty,53054,"$240,317.30",no,1,1
+black,Heathered Black|dottie tribe white black|Radiate Foil Print Black|Undertone Black Multi|Rhythmic Emboss Black|Gradiate Geo Emboss Black|Narrow Bold Stripe Black White|Heritage 365 Camo Black Multi|Wee Are From Space Black Slate|Nano Check Rover Black|freckle flower black white|pretty lace white black|samba snake battleship black|Leopardo Jacquard MED Black|Leopardo Jacquard Pomegranate Black|Leopardo Mini Jacquard Graphite Grey Black|Leopardo Mini Jacquard Lunar Rock Black|Spray Leopard Black Multi|Short Serve Stripe Heathered Medium Grey Black|Short Serve Stripe White Black|Chroma Blur Black Multi|Black Cherry|Logo Flourish Black Iridescent Foil|Shapeshifter Foil Black|Knit Leopard Graphite Grey Black|Commission Stripe Black White|Floral Freestyle Black Multi|Diffuse Starlight Black|power luxtreme spray jacquard sapphire blue black|Segment Emboss Black|pop cut fatigue green black|Boundless Stripe Black White|Boundless Stripe Bone Black|Distressed Twill Emboss Black|cyber black deep coal|Luminesce Splatter Ice Grey Black,partial,full|partial,black leggings,54696,"$358,375.82",yes,38,2
+leggings,leggings,full,full,black leggings,54696,"$358,375.82",no,1,1
+shorts,Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,partial|full,shorts hotty hot,50362,"$248,956.35",yes,7,2
+hotty,Hotty Hot,partial,partial,shorts hotty hot,50362,"$248,956.35",no,1,1
+hotty hot,hotty hot,full,full,shorts hotty hot,50362,"$248,956.35",no,1,1
+hot,Hot Heat|Hotty Hot,partial,partial,shorts hotty hot,50362,"$248,956.35",yes,2,1
+bag,Duffle Bags|Yoga Bags|Crossbody Bags|Belt Bags,partial,full|partial,bag belt,57841,"$318,046.65",yes,5,2
+belt,Belt Bags,partial,partial,bag belt,57841,"$318,046.65",no,1,1
+short,Short Sleeve Shirts|Short Serve Stripe Heathered Medium Grey Black|Short Serve Stripe White Black|Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,full|partial,women's short,44354,"$235,963.60",yes,11,2
+crossbody,Crossbody Bags,partial,partial,crossbody bag,44113,"$277,192.70",no,1,1
+bag,Duffle Bags|Yoga Bags|Crossbody Bags|Belt Bags,partial,full|partial,crossbody bag,44113,"$277,192.70",yes,5,2
+align,align,full,full,align short,55078,"$427,484.11",no,1,1
+short,Short Sleeve Shirts|Short Serve Stripe Heathered Medium Grey Black|Short Serve Stripe White Black|Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,full|partial,align short,55078,"$427,484.11",yes,11,2
+yoga,Yoga Bags|Yoga Accessories|Yoga Mats,partial,full|partial,yoga mat,51681,"$752,329.75",yes,4,2
+mat,Mat Straps|Yoga Mats,partial,partial,yoga mat,51681,"$752,329.75",yes,2,1
+crossbody,Crossbody Bags,partial,partial,crossbody,58229,"$560,166.53",no,1,1
+speed,Speed Up|Swift Speed,partial,partial,speed ups,48856,"$109,828.05",yes,2,1
+ebb,Ebb to Street,partial,partial,ebb to street tank,57290,"$437,690.85",no,1,1
+ebb to,Ebb to Street,partial,partial,ebb to street tank,57290,"$437,690.85",no,1,1
+ebb to street,ebb to street,full,full,ebb to street tank,57290,"$437,690.85",no,1,1
+to,License To Train|Built To Move|Ebb to Street|Free to Be|Ready to Rulu,partial,partial,ebb to street tank,57290,"$437,690.85",yes,5,1
+to street,Ebb to Street,partial,partial,ebb to street tank,57290,"$437,690.85",no,1,1
+street,Ebb to Street,partial,partial,ebb to street tank,57290,"$437,690.85",no,1,1
+tank,Tank Tops,partial,partial,ebb to street tank,57290,"$437,690.85",no,1,1
+poolside,Heathered Poolside,partial,full|partial,poolside,34923,"$108,486.35",yes,2,2
+scuba,scuba,full,full,scuba hoodie,86244,"$1,534,340.17",no,1,1
+shoes,Cross Training Shoes|Trail Running Shoes,partial,full|partial,shoes,54503,"$447,393.44",yes,3,2
+align,align,full,full,align dress,56863,"$439,280.73",no,1,1
+dress,Dress Pants|Bodycon Dresses|Shirt Dresses,partial,partial|full,align dress,56863,"$439,280.73",yes,4,2
+lululemon,lululemon Lab|lululemon membership|Lululemon Ombre Red Multi,partial,partial,lululemon align leggings,82952,"$1,796,477.65",yes,3,1
+align,align,full,full,lululemon align leggings,82952,"$1,796,477.65",no,1,1
+leggings,leggings,full,full,lululemon align leggings,82952,"$1,796,477.65",no,1,1
+tennis,tennis,full,full,tennis,39094,"$291,794.89",no,1,1
+align,align,full,full,align bra,47408,"$244,170.82",no,1,1
+bra,Sports Bras|Racerback Bras,partial,partial,align bra,47408,"$244,170.82",yes,2,1
+jogger,jogger,full,full,jogger,46262,"$513,486.39",no,1,1
+in,Always In Motion|Zeroed In|In Movement,partial,partial,back in action,41323,"$383,428.51",yes,3,1
+all,All Yours,partial,partial,all yours,48091,"$297,365.13",no,1,1
+all yours,all yours,full,full,all yours,48091,"$297,365.13",no,1,1
+yours,All Yours,partial,partial,all yours,48091,"$297,365.13",no,1,1
+skort,skort,full,full,skort,34086,"$164,892.60",no,1,1
+bras,Sports Bras|Racerback Bras,partial,partial,bras,41098,"$268,973.70",yes,2,1
+tops,Tank Tops|Swimsuit Tops,partial,partial,tops,42753,"$147,392.63",yes,2,1
+pink,Sonic Pink|Flush Pink|Meadowsweet Pink|Pink Peony|Glaze Pink|Heathered Glaze Pink|Pink Pastel|Pink Clay|Pink Mist|Dew Pink|Flower Glide Max Pink Multi|Pow Pink|Sakura Pink|Azalea Pink|Vintage Pink|Ombre Glide Washed Mauve Sakura Pink Peach Bellini|NOUVEAU MARBLE Meadow Sweet Pink Multi|Pink Lychee|Pink Puff|Highlight Pink|butter pink|Heathered Meadowsweet Pink|Incognito Camo Pink Taupe Multi|Inline Stripe White Heathered Pink Peony|Gossamer Floral Vita Pink Multi|Pink Glow|pink sorbet,partial,partial|full,pink,50951,"$230,496.45",yes,28,2
+align,align,full,full,align top,46025,"$190,555.25",no,1,1
+top,Tank Tops|Swimsuit Tops,partial,partial,align top,46025,"$190,555.25",yes,2,1
+shorts,Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,partial|full,men's shorts,37784,"$234,366.58",yes,7,2
+kelly,BLOSSOM SILHOUETTE MAX Lilac Smoke Kelly Green,partial,partial,kelly green,32558,"$176,624.45",no,1,1
+kelly green,BLOSSOM SILHOUETTE MAX Lilac Smoke Kelly Green,partial,partial,kelly green,32558,"$176,624.45",no,1,1
+green,Kohlrabi Green|Green Jasper|Maldives Green|Army Green|Bronze Green|Cascadia Green|Laurel Green|Everglade Green|Paradise Green|Paint Drift Kohlrabi Green Multi|Heathered Cascadia Green|Green Punch|scream green|Legacy Green|BLOSSOM SILHOUETTE MAX Lilac Smoke Kelly Green|Heathered Paradise Green|Ether Green|Green Twill|Thermal Green|Spark Green|Rainforest Green|Military Green|True Stripe Burnside Green White|Heathered Rosemary Green|Jumie Stripe Elixir Edamame Green|Tri Colour Rulu Green Jasper Oceanic|Deep Green|Incognito Camo Multi Gator Green|Heathered Kohlrabi Green|Ice Green|Marmoleado Tie Dye White Opal Rosemary Green|Gully Green|Heathered Green Jasper|Viridian Green|pop cut fatigue green black|Burnside Green|Heritage 365 Camo Green Twill Multi,partial,full|partial,kelly green,32558,"$176,624.45",yes,38,2
+everywhere,everywhere,full,full,everywhere crossbody bag,39908,"$247,984.25",no,1,1
+crossbody,Crossbody Bags,partial,partial,everywhere crossbody bag,39908,"$247,984.25",no,1,1
+bag,Duffle Bags|Yoga Bags|Crossbody Bags|Belt Bags,partial,full|partial,everywhere crossbody bag,39908,"$247,984.25",yes,5,2
+swiftly,swiftly,full,full,swiftly shirt,53547,"$469,522.85",no,1,1
+shirt,Shirt Dresses|Short Sleeve Shirts|Long Sleeve Shirts|Button Down Shirts|Polo Shirts,partial,partial|full,swiftly shirt,53547,"$469,522.85",yes,6,2
+tennis,tennis,full,full,tennis skirt,36554,"$290,504.58",no,1,1
+skirt,Athletic Skirts,partial,full|partial,tennis skirt,36554,"$290,504.58",yes,2,2
+java,java,full,full,java,32942,"$195,831.64",no,1,1
+espresso,Heathered Dark Espresso|Monarch Bloom Bone Espresso,partial,full|partial,espresso,57850,"$578,699.25",yes,3,2
+bone,Heathered Bone|Monarch Bloom Bone Espresso|Inherent Brush WP Bone Raw Linen|Whimsical Meld WP Bone Mineral Blue|Bone Radiate Transparent Foil|Boundless Stripe Bone Black,partial,full|partial,bone,39693,"$347,961.27",yes,7,2
+dance,Dance Studio,partial,partial|full,dance studio pants,44796,"$377,207.60",yes,2,2
+dance studio,dance studio,full,full,dance studio pants,44796,"$377,207.60",no,1,1
+studio,Dance Studio,partial,partial,dance studio pants,44796,"$377,207.60",no,1,1
+pants,5 Pocket Pants|Cargo Pants|Dress Pants,partial,partial|full,dance studio pants,44796,"$377,207.60",yes,4,2
+fast,Fast & Free,partial,partial,fast and free,46169,"$442,761.09",no,1,1
+and,Wallets and Pouches,partial,partial,fast and free,46169,"$442,761.09",no,1,1
+free,Fast & Free|Free to Be,partial,partial,fast and free,46169,"$442,761.09",yes,2,1
+flush,Flush Pink,partial,partial,flush pink,30303,"$149,933.25",no,1,1
+flush pink,flush pink,full,full,flush pink,30303,"$149,933.25",no,1,1
+pink,Sonic Pink|Flush Pink|Meadowsweet Pink|Pink Peony|Glaze Pink|Heathered Glaze Pink|Pink Pastel|Pink Clay|Pink Mist|Dew Pink|Flower Glide Max Pink Multi|Pow Pink|Sakura Pink|Azalea Pink|Vintage Pink|Ombre Glide Washed Mauve Sakura Pink Peach Bellini|NOUVEAU MARBLE Meadow Sweet Pink Multi|Pink Lychee|Pink Puff|Highlight Pink|butter pink|Heathered Meadowsweet Pink|Incognito Camo Pink Taupe Multi|Inline Stripe White Heathered Pink Peony|Gossamer Floral Vita Pink Multi|Pink Glow|pink sorbet,partial,partial|full,flush pink,30303,"$149,933.25",yes,28,2
+bike,bike,full,full,bike short,29690,"$99,422.55",no,1,1
+short,Short Sleeve Shirts|Short Serve Stripe Heathered Medium Grey Black|Short Serve Stripe White Black|Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,full|partial,bike short,29690,"$99,422.55",yes,11,2
+speed,Speed Up|Swift Speed,partial,partial,speed up shorts,38082,"$207,414.90",yes,2,1
+speed up,speed up,full,full,speed up shorts,38082,"$207,414.90",no,1,1
+up,Speed Up|Zip Up Sweatshirts,partial,partial,speed up shorts,38082,"$207,414.90",yes,2,1
+shorts,Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,partial|full,speed up shorts,38082,"$207,414.90",yes,7,2
+pouch,Wallets and Pouches,partial,partial,dual pouch wristlet,65252,"$787,321.15",no,1,1
+scuba,scuba,full,full,scuba half zip,48439,"$511,283.90",no,1,1
+half,Half Zip Sweatshirts,partial,partial,scuba half zip,48439,"$511,283.90",no,1,1
+half zip,Half Zip Sweatshirts,partial,partial,scuba half zip,48439,"$511,283.90",no,1,1
+zip,Half Zip Sweatshirts|Zip Up Sweatshirts,partial,partial,scuba half zip,48439,"$511,283.90",yes,2,1
+socks,No Show Socks|Ankle Socks|Crew Socks|Knee High Socks,partial,partial|full,socks,57110,"$503,462.16",yes,5,2
+hotty,Hotty Hot,partial,partial,hotty,43285,"$276,290.40",no,1,1
+golf,golf,full,full,golf,30687,"$272,914.11",no,1,1
+short,Short Sleeve Shirts|Short Serve Stripe Heathered Medium Grey Black|Short Serve Stripe White Black|Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,full|partial,short,32397,"$121,176.38",yes,11,2
+crossbody,Crossbody Bags,partial,partial,crossbody belt bag,35039,"$201,992.95",no,1,1
+belt,Belt Bags,partial,partial,crossbody belt bag,35039,"$201,992.95",no,1,1
+bag,Duffle Bags|Yoga Bags|Crossbody Bags|Belt Bags,partial,full|partial,crossbody belt bag,35039,"$201,992.95",yes,5,2
+camo,Heritage 365 Camo Deep Coal Multi|Backcountry Camo Blue Orange Multi|Cheetah Camo Deep Coal Multi|Heritage 365 Camo Black Multi|Heritage 365 Camo Smoky Red Night Sea Multi|Incognito Camo Multi Gator Green|Incognito Camo Multi Grey|Incognito Camo Pink Taupe Multi|Le Tigre Camo Deep Coal Multi|Heritage 365 Camo Rhino Grey Multi|Formation Camo Deep Coal Multi|Heritage Camo Max Rover White Opal|Heritage 365 Camo Green Twill Multi,partial,partial,camo leggings,32376,"$226,251.75",yes,13,1
+leggings,leggings,full,full,camo leggings,32376,"$226,251.75",no,1,1
+dark,Dark Lavender|Dark Forest|Dark Red|Dark Oxide|Dark Olive|Heathered Dark Espresso|heathered dark forest|Heathered Dark Olive|Dark Mocha|Dark Chrome|Dark Coffee|3 Colour Space Dye Deep Coal Dark Carbon|sea spray alpine white dark chrome|Dark Sport Red,partial,partial,dark lavender,27936,"$157,495.20",yes,14,1
+dark lavender,dark lavender,full,full,dark lavender,27936,"$157,495.20",no,1,1
+lavender,Dark Lavender|Lavender Dew|Digital Lavender,partial,partial,dark lavender,27936,"$157,495.20",yes,3,1
+long,Long Sleeve Shirts,partial,full|partial,long sleeve,47228,"$319,056.00",yes,2,2
+long sleeve,Long Sleeve Shirts,partial,partial,long sleeve,47228,"$319,056.00",no,1,1
+sleeve,Short Sleeve Shirts|Long Sleeve Shirts,partial,partial,long sleeve,47228,"$319,056.00",yes,2,1
+energy,energy,full,full,energy bra,39600,"$327,343.17",no,1,1
+bra,Sports Bras|Racerback Bras,partial,partial,energy bra,39600,"$327,343.17",yes,2,1
+leggings,leggings,full,full,flare leggings,35271,"$225,701.50",no,1,1
+year,5 Year Basic,partial,partial,women's end of year finds,16470,"$44,044.90",no,1,1
+love,Love Red,partial,full|partial,love,37957,"$357,421.81",yes,2,2
+hotty,Hotty Hot,partial,partial,hotty hot shorts,31182,"$140,462.15",no,1,1
+hotty hot,hotty hot,full,full,hotty hot shorts,31182,"$140,462.15",no,1,1
+hot,Hot Heat|Hotty Hot,partial,partial,hotty hot shorts,31182,"$140,462.15",yes,2,1
+shorts,Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,partial|full,hotty hot shorts,31182,"$140,462.15",yes,7,2
+shorts,Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,partial|full,women's shorts,23067,"$103,045.15",yes,7,2
+jackets,Athletic Jackets|Rain Jackets|Puffer Jackets|Bomber Jackets,partial,partial|full,jackets,37074,"$413,733.53",yes,5,2
+swiftly,swiftly,full,full,swiftly tech short sleeve,32160,"$297,065.15",no,1,1
+tech,Metal Vent Tech,partial,partial,swiftly tech short sleeve,32160,"$297,065.15",no,1,1
+short,Short Sleeve Shirts|Short Serve Stripe Heathered Medium Grey Black|Short Serve Stripe White Black|Chino Shorts|Athletic Shorts|Sweat Shorts|Board Shorts|Boy Shorts|Cargo Shorts,partial,full|partial,swiftly tech short sleeve,32160,"$297,065.15",yes,11,2
+short sleeve,Short Sleeve Shirts,partial,partial,swiftly tech short sleeve,32160,"$297,065.15",no,1,1
+sleeve,Short Sleeve Shirts|Long Sleeve Shirts,partial,partial,swiftly tech short sleeve,32160,"$297,065.15",yes,2,1
+tennis,tennis,full,full,tennis skirts,26046,"$243,105.46",no,1,1
+skirts,Athletic Skirts,partial,full|partial,tennis skirts,26046,"$243,105.46",yes,2,2
+belt,Belt Bags,partial,partial,belt,43581,"$238,746.75",no,1,1
+slides,slides,full,full,slides,43549,"$454,080.87",no,1,1
+ebb,Ebb to Street,partial,partial,ebb to street,33184,"$172,086.19",no,1,1
+ebb to,Ebb to Street,partial,partial,ebb to street,33184,"$172,086.19",no,1,1
+ebb to street,ebb to street,full,full,ebb to street,33184,"$172,086.19",no,1,1
+to,License To Train|Built To Move|Ebb to Street|Free to Be|Ready to Rulu,partial,partial,ebb to street,33184,"$172,086.19",yes,5,1
+to street,Ebb to Street,partial,partial,ebb to street,33184,"$172,086.19",no,1,1
+street,Ebb to Street,partial,partial,ebb to street,33184,"$172,086.19",no,1,1
+bodysuit,bodysuit,full,full,bodysuit,29826,"$250,635.77",no,1,1
+sculpt,sculpt,full,full,sculpt tank,26024,"$199,160.60",no,1,1
+tank,Tank Tops,partial,partial,sculpt tank,26024,"$199,160.60",no,1,1
+utility,Utility Blue|Utility Yellow|Flicker Pace Utility Blue Multi,partial,partial,utility blue,22307,"$120,983.45",yes,3,1
+utility blue,Flicker Pace Utility Blue Multi,partial,full|partial,utility blue,22307,"$120,983.45",yes,2,2
+blue,Utility Blue|Pitch Blue|Cyan Blue|Powder Blue|Aero Blue|Pipe Dream Blue|Hawaiian Blue|Pastel Blue|Belgian Blue|Blue Linen|Iron Blue|Oasis Blue|shocking blue|Sheer Blue|Icing Blue|Symphony Blue|Blue Nile|Blazer Blue Tone|Petrol Blue|Blissful Blue|Sinatra Blue|jungle floor turquoise sea naval blue|Mineral Blue|Backcountry Camo Blue Orange Multi|Cross Court Wash Pastel Blue Multi|Twice Blue|oil slick blue|Silver Blue|Cerulean Blue|Gatsby Blue|Heathered Belgian Blue|samba snake kayak blue hero blue|samba snake kayak blue hero blue|Cadet Blue|Shale Blue|Heathered Oasis Blue|rope rappel angel wing rugged blue|Blue Willow|Circulate Tie Dye Mineral Blue Multi|Flicker Pace Utility Blue Multi|Hero Blue|Stippled Fusion Belgian Blue Multi|Ink Islands Twice Blue Multi|Inline Stripe White Heathered Blue Linen|Pocket Stripe Pitch Blue Brown Earth|Pocket Stripe Windmill Oasis Blue|Heathered Blazer Blue|Heathered Blue Chill|Heathered Blue Linen|heathered iron blue|kayak blue|Kayak Blue Light|Purist Dotted Speckle Blue Denim|Heathered Code Blue|River Blue|Enzyme Dye Mineral Blue|Whimsical Meld WP Bone Mineral Blue|Blue Cast|Blue Charcoal|power luxtreme spray jacquard sapphire blue black|Code Blue,partial,full|partial,utility blue,22307,"$120,983.45",yes,61,2
+headband,headband,full,full,headband,34690,"$136,932.48",no,1,1
+ebb,Ebb to Street,partial,partial,ebb,33466,"$193,606.78",no,1,1

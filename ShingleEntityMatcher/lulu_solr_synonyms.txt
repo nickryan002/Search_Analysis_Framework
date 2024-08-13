@@ -1,0 +1,350 @@
+﻿shopper, tote
+backpack, rucksack, book bag, school bag
+duffel, gym bag, workout bag
+scarf, wraps, scarves, throw, blanket, wrap, poncho
+abc, commission
+rashie, rash guard, rashguard
+mittens, mitts
+cap, hat
+toque, beanie air
+quarter zip, 1/4 zip, half zip, 1/2 zip, zip up, quarter zips
+fanny pack, belt bag
+go getter => duffle bag
+go getter pouch, go getter pouch mini, go getter mini
+chino => abc pant, abc pants, abc trouser, abc trousers, chino short, chino shorts, chinos short, chinos shorts
+chinos => abc pant, abc pants, abc trouser, abc trousers, chino short, chino shorts, chinos short, chinos shorts
+merino wool, wool, merino
+reflective, reflection, glow, reflect
+undies, underwear, knicker, undergarment
+beanie, toque, toques
+sweater => cardigan, sweater, turtleneck, alpine air
+crops => capris
+dress pants, trousers
+tank, tank tops
+lotion, moisturizer, body cream
+maternity => new parent bag, align pant, align jogger, align short, all yours dress, LA funnel neck dress, v-neck midi dress, back in action dress, ease of it all dress, perfectly oversized crew
+pregnant => new parent bag, align pant, align jogger, align short, all yours dress, LA funnel neck dress, v-neck midi dress, back in action dress, ease of it all dress, perfectly oversized crew
+pregnancy => align pant, align jogger, align short, all yours dress, LA funnel neck dress, v-neck midi dress, back in action dress, ease of it all dress, perfectly oversized crew
+speed up collection => speed up
+on my level => tote bag
+align shop => align
+align collection => align
+abc shop => abc
+bodywear => wundermost
+metal vent tech shop => metal vent tech
+city sweat shop => city sweat
+wunder under shop => wunder under
+wunder under collection => wunder under
+metal vent breathe => metal vent tech
+swiftly shop => swiftly
+fast & free shop => fast and free
+nulu => align, nulu
+gifting, gift guide, holiday gift, holiday gifting, holiday gifts, christmas
+puffers => puffer
+spin => bike
+biker => bike
+formation camo, leopard, wild thing camo, leopard print, cheetah print, cheetah, animal, animal print
+tie dye, game day, diamond dye, tie die, diamond die, ice wash, shibori, chalk wash, cloudy wash, watercolor wash
+tye dye => tie dye
+bralette => awake to lace bra, hold true bra
+camisole => power y, free tank everlux, held tight tank, align tank, power pivot, cool racerback, ebb to street tank top
+lined leggings => brushed leggings
+lined legging => brushed leggings
+on the fly skirt => skirts
+makeup bag => kit, pouch
+pencil case => pouch
+hair tie, scrunchie, hair elastics, hair tie
+explore membership => membership
+swiftly love => swiftly, love tee, love crew, love tank
+love swiftly => swiftly, love tee, love crew, love tank
+ribbed tank, ebb street tank, rib tank
+jacket bag => packable coats & jackets
+boyfriend => oversized, all yours tee, all yours short sleeve, boxy
+flare leggings => align wide leg crop, groove, flare pant
+sweatsuit => sweatpants, sweatshirts
+shawl => poncho, scarf, wrap
+straight leg => trousers, bootcut
+toiletry bag => pouch, selfcare
+cami leggings => camo leggings
+matching => sweatpants, hoodies, sweatshirts, sweat shorts
+matching set => sweatpants, hoodies, sweatshirts, sweat shorts
+matching sets => sweatpants, hoodies, sweatshirts, sweat shorts
+lounge sets => sweatpants, hoodies, sweatshirts, sweat shorts
+jogger set => sweatpants, hoodies, sweatshirts, sweat shorts
+sweat suits => sweatpants, hoodies, sweatshirts, sweat shorts
+gaiter => neck warmer
+gaitor => neck warmer
+wonderpuff => wunder puff
+underware => underwear
+shine => matte copper foil, matte black foil
+metallic=> foil, shine, shiny
+crossover leggings, twist waist, aligned angles super high rise, cross waist, wrap waist, ruched waist
+cross leggings => twist waist, aligned angles super high rise, cross waist, ruched waist
+crossover legging => twist waist, aligned angles super high rise, cross waist, wrap waist, ruched waist
+crossed leggings => twist waist, aligned angles super high rise, cross waist, wrap waist, wrap waist, ruched waist
+cross over legging => twist waist, aligned angles super high rise, cross waist, wrap waist, wrap waist, ruched waist
+criss cross => twist waist, aligned angles super high rise, cross waist, wrap waist, ruched waist
+criss cross leggings => twist waist, aligned angles super high rise, cross waist, wrap waist, wrap waist, ruched waist
+cross legging => twist waist, aligned angles super high rise, cross waist, wrap waist, ruched waist
+shine => shine, matte copper foil, matte black foil
+foil => shine, foil
+metallic => shine, matte copper foil, matte black foil
+cross waist => twist waist, aligned angles super high rise, cross waist
+ready to fleece => ready jogger, fleece jogger
+velvet jogger => crush jogger, velvet pant
+royal blue => royal blue, regatta blue, cerulean blue, symphony blue, larkspur, blue nile
+velvet joggers => crush jogger, velvet pant
+funnel neck => funnel, turtleneck
+funnel => funnel, turtleneck
+toiletry => selfcare, pouch
+mens sweater => mens sweatshirt
+mens sweaters => mens sweatshirts
+colored leggings => neon leggings, blue leggings, burgundy leggings, green leggings, multi leggings, orange leggings, pink leggings, purple leggings, red leggings, tie dye leggings
+card holder => card holder, take it on crossbody pouch, true identity card case, logo pouch
+hot pink, ripened raspberry, gauva pink, pink punch, pink highlight, highlight purple, pow pink
+track suit => dance studio, track pants, track suit
+speed wunder => speed wunder, wunder under, speed up tight
+fingerless gloves => chevron knit mitten, training gloves, push the limit training gloves, train boxing wraps, armwarmers
+wrap leggings => twist waist, wrap leggings
+tracksuit => dance studio, track pants, track suit
+under wear => underwear
+small backpack => nano, city adventurer backpack micro, city adventurer backpack mini
+makeup bags => pouch
+cropped zip up => cropped jacket
+speed wunder => speed, wunder
+free to be zen => free to be wild, free to be bra
+train times        => workout leggings, workout shorts
+train time        => workout leggings, workout shorts
+scuba crop => scuba high-rise jogger, scuba jogger, scuba oversized
+flash forward => womens running jacket
+key to balance => blissful bend tank, align tank, key
+key to balance tank => blissful bend tank, align tank, key
+on the fly short => women's casual shorts
+on the fly shorts => women's casual shorts
+on the fly => women's casual
+baby blue => pastel blue, silver blue, blue linen
+pale blue => pastel blue, silver blue, blue linen
+lined jogger => fleece jogger
+lined joggers => fleece jogger
+unleash => womens workout bras, womens hoodies
+brick => highlight orange, canyon orange, saffron
+grove pant => groove pant
+all hours => belt bags, womens backpacks
+action always => womens training shirts
+periwinkle => lavender, water drop, blue linen, serene blue, chambray
+welterweight => mens hoodies, mens joggers
+lime green => highlight yellow, neo mint
+fundamental, fundamental t, fundamental tee, 5 year basic, 5 year
+get centered => cropped hoodie
+get centred => cropped hoodie
+heart throb => hot pink
+swiftly breeze => swiftly relaxed, swiftly breathe
+city stroll => trench coat
+sun protection => uvp, uv
+pushing limits => yoga bras, yoga leggings
+ballet slipper => pink mist, feather pink
+uvp, upf, SPF, uv
+chase the chill => cold weather leggings, cold weather shirts
+run off route => running tank, running shirt
+hydrangea blue => blue linen, water drop, serene blue, blue cast, chambray
+bluebell => royal blue, regatta blue, cerulean blue, symphony blue, larkspur, blue nile, bluebell
+wild bluebell => blazer blue, poolside, larkspur, blue nile
+jumpsuit, romper
+tankini => swim top
+on the fly 78 => women's trousers
+keep moving, stretch high rise
+culottes => align wide leg, soft ambitions high rise crop, wide-leg high rise, bound to bliss high-rise
+button up => button down, in the moment shirt, boxy seersucker short sleeve
+collared shirt => button down, in the moment shirt, boxy seersucker short sleeve
+travel commute => travel, work
+exercise dress => tennis dress, running dress, workout dress
+make up bag => pouch
+coin purse => wallet, pouch
+purse => crossbody
+cargo => cargo, metropolis maven
+cargos => cargos, metropolis maven
+cargo pants => cargo, metropolis maven
+weekender, duffel, duffle, weekend
+scrubs => dance studio pant
+leggings, tights
+yoga socks => find your balance
+pilates socks => find your balance
+barre socks => find your balance
+fuzzy, teddy, shearling, plush, sherpa, reversible fleece jacket, fuzzy jacket, fleece zip, fleece belt bag, textured fleece, fluffy jacket
+fuzzy fanny pack => fleece belt bag
+crew backpack => backpack
+women's cold weather long sleeve shirts, rest less, restless
+card case, coin, logo pouch
+forest green => rainforest green, everglade green
+drawstring bag => dual function, side-cinch shopper bag, paracord, take it on crossbody pouch, Play Forward Crossbody Pouch
+rippled, waffle, textured crewneck
+turtleneck => turtleneck, ready to rulu pullover, fleece insulated pullover, mock neck, pace pursuit long sleeve
+ruched waist => ruched waist, gathered waist, ribbed waist
+burnt orange => burnt orange, copper brown, desert sun
+scuba sweater => scuba hoodies & sweatshirts
+serene stride dress, tennis dress
+brown, rust
+yoga mat strap, yoga mat spray
+yoga mat spray => yoga mat spray 
+5mm yoga mat, yoga mat spray
+reversible mat, yoga mat spray
+mat strap, yoga mat spray
+workout mat, yoga mat spray
+5mm mat, yoga mat spray
+workout yoga mats, yoga mat spray
+workout yoga mat, yoga mat spray
+yoga mat 5mm, yoga mat spray
+big mat, yoga mat spray
+training yoga mats, yoga mat spray
+mat cleaner, yoga mat spray
+reversible mat 5mm, yoga mat spray
+reversible yoga mat => yoga mat, yoga mat spray
+colour block, nulu asymmetrical, color block, colorblock, colourblock
+fast track => duffle, backpack
+fast as light => womens training tank tops
+sweater wrap, cardigan, short sleeve wrap, cashlu wrap, knit wrap, cardigans
+spandex => leggings, biker shorts
+tall shorts => short 10, womens short 5, short 10, short 11
+nude => beige, tan, brown, trench, soft sand, smoky topaz, dusty bronze, misty shell, chantilly, frontier, cafe au lait, brown
+bolster => yoga block, yoga kit
+commute => work, on the move
+neck warmer, neckwarmer
+waterproof pants => water resistant pants
+tech fleece => Base Pace Fleece, Adapted State High-Rise Fleece, Fleece Flurry Jacket, Cross Chill Jacket RepelShell, down for it all, run for it all neck warmer, cold terrain run beanie, chase the chill
+scuba plush => plush, scuba
+infinity scarf => customizable snap, fleece lined knit neck, chevron knit neck
+hold tight, held tight
+jogging => joggers, running
+baseball hat => ball cap, baller hat, free run hat, free ponytail running hat, race kit hat, crushable run hat, lab run hat, train women's hat, commission hat
+baseball => ball cap, baller hat, free run hat, free ponytail running hat, race kit hat, crushable run hat, lab run hat, train women's hat, commission hat
+sweatband => headband, wrist band
+sweat band => headband, wrist band
+swiftly wool => wool sweater, wool hoodie, swiftly
+surge warm half zip => surge warm 1/2 zip
+surge half zip => surge warm 1/2 zip
+bodysuit, jumpsuit,jumpsuits, onesie, romper, unitard, bodysuits, jump suit
+earwarmer, ear warmer
+earwarmers, ear warmers
+warm leggings => fleece leggings, cold weather leggings
+multi pack => 3 pack, 5 pack, 7 back, 10 pack, 2 pack, 4 pack, 6 pack, 8 pack, 12 pack
+multipack => 3 pack, 5 pack, 7 back, 10 pack, 2 pack, 4 pack, 6 pack, 8 pack, 12 pack
+sage => sage, saje
+sale => we made too much
+on sale => we made too much
+black friday => we made too much
+groove align => groove, align
+espresso, french press
+ballet, dance
+flannel => button down long sleeve shirt, overshirt
+here to there => casual
+silverescent => swiftly, metal vent tech
+burnt caramel => burnt caramel, copper brown
+high neck tank => high neck tank, prod5020018,prod7030032, prod10520428, prod9750455, prod9980090, prod10020121, prod10120009, prod9600540, prod9780099, prod9820382, prod10030005, prod10680139, prod10760085                
+high neck tanks =>  high neck tank, prod5020018,prod7030032, prod10520428, prod9750455, prod9980090, prod10020121, prod10120009, prod9600540, prod9780099, prod9820382, prod10030005, prod10680139, prod10760085                
+sonic pink, pow pink, lipgloss, lip gloss
+blue nile, cornflower
+align sale => prod10642079, prod9490018, prod9980085, prod10470031, prod10120006, prod10642078, prod10550001, prod8360162, prod8840221, prod9770171, prod10550049, prod8840324, prod10520954, prod10520811
+align clearance => prod10642079, prod9490018, prod9980085, prod10470031, prod10120006, prod10642078, prod10550001, prod8360162, prod8840221, prod9770171, prod10550049, prod8840324, prod10520954, prod10520811
+dance studio full length => dance studio high rise pant, dance studio jogger
+swiftly sale => prod9900002, prod9940023, prod9940024, prod9910044, prod10300109, prod9820340, prod10060077, prod10300110, prod10650021, prod10680139
+happy hatha => tote, yoga capris
+high waist => high waisted
+blouse => prod10520838, full day ahead short sleeve shirt, women button shirt
+blouses => prod10520838, full day ahead short sleeve shirt, women button shirt
+tall skirt => skirt long, skirt 15
+twill pants => twill pant
+outerwear => coat, jacket
+spring jacket => spring coats and jackets
+beach bag, swim bag
+hooded vest => another mile vest, Around Vest, Sleet Street Vest
+dark purple => Grape Thistle, Denim Wash Print Dusky Lavender Black, petrol Purple, Water Surface Black Granite/Wisteria Purple
+cosmetic bag => pouch, kit bag
+winter hat => beanie, trapper hat, insulated hat
+winter hats => beanie, trapper hat, insulated hat
+thermal hats => beanie, trapper hat, insulated hat
+fuschia => magenta
+plush => sherpa
+align 24 => align 23, align 25
+top => shirt
+rulu half zip, rulu pullover, ready to rulu pullover
+studio sock => studio sock, find your balance sock, find your balance leg warmer
+studio socks => studio sock, find your balance sock, find your balance leg warmer
+studio => studio, find your balance sock, find your balance leg warmer
+warm jacket => mid warmth, high warmth, full warmth
+sweater dress => fleece dress, sweater dress
+allaround, all around
+wrap top => wrap shirt, wrap front
+crescent tee => crescent tee, crescent t shirt
+free to be moved => free to be bra 
+skincare => balm, deodorant, deoderant, lotion, hand sanitizer, sunscreen, moisturizer
+skin care => balm, deodorant, deoderant, lotion, hand sanitizer, sunscreen, moisturizer
+deep red => dark red, red merlot, deep red
+cream => white opal, cream
+diaper => new parent
+bright blue => royal blue, regatta blue, cerulean blue, symphony blue, blue nile, bluebell, blazer blue, capri, capture blue
+track that mr => track that
+black groove => groove pant, black flare pant
+olympic gear => team canada
+puffer scarf => down scarf, quilted scarf, insulated scarf
+puffy scarf => down scarf, quilted scarf, insulated scarf
+little backpack => nano backpack, small backpacks
+reveal bra => ebb to street bra, ebb to train bra
+scuba pullover => scuba hoodie, scuba crew, scuba half zip, scuba oversized
+scuba pullover => scuba hoodie, scuba sweatshirt
+keychain => keychain, nano backpack
+key pouch => logo pouch, nano backpack, small things count kit
+keychain wallet => logo pouch, nano backpack, small things count kit
+wrist pouch => dual pouch wristlet, now and always pouch, small things count kit, curved wristlet
+keypouch => logo pouch, nano backpack, dual pouch wristlet 
+keychain pouch => logo pouch, nano backpack, dual pouch wristlet
+wallet keychain => dual pouch wristlet, logo pouch, nano backpack, small things count kit, curved wristlet
+wrist, wristlet
+train to be tee => train to be short sleeve
+dual wristlet => dual pouch wristlet, now and always pouch, small things count kit, curved wristlet
+dual wrist pouch => dual pouch wristlet, now and always pouch, small things count kit, curved wristlet
+overall => zippered jumpsuit, pocketed romper
+overalls => zippered jumpsuit, pocketed romper
+radiant => define jacket, scuba full zip hoodie
+dual pouch => dual pouch wristlet, now and always pouch, small things count kit, curved wristlet
+rainbow sock => sock rainbow, prod9750654, prod10900019
+all yours => loungeful, all yours
+butterfly shorts => track that short, inner glow short, evergreen short, find your pace short, nulu and mesh shorts
+ruffle => tennis time, court rival skirt
+cosmetic => selfcare
+aqua => teal, turquoise
+oval top access => toiletry
+tee => take
+logo t => graphic shirt
+logo tee => graphic shirt
+scoop neck => swiftly racerback, cool racerback, ebb to street tank, love tank, scoop dress, wundermost
+volleyball => athletic shorts, sports bra, headband
+volley ball => athletic shorts, sports bra, headband
+beach volleyball => athletic shorts, sports bra, headband
+long shorts => 10, 11
+collar => collar, button down
+baby pink => peach satin, strawberry milkshake, dew pink, pink mist
+bathing suit => swim
+swimwear => swim
+swimsuit => swim
+board short => swim trunk
+men swim short => swim trunk
+sleeveless, tank
+logo waistband => align leggings, wunder train leggings, invigorate leggings, astro pant, crisscross tight
+still => wide leg
+effortless => women lightweight jacket
+card holder => card case, logo pouch
+cardholder => card case, logo pouch
+athletic bag => hiking bag, yoga bag, workout bag, running bag, golf bag, tennis bag, training bag
+mustard yellow => auric gold, soleil, spiced bronze, gold spice
+mustard => auric gold, soleil, spiced bronze, gold spice
+paper => shorts
+Lunar New Year, new year, lny, prod11020375
+crew, crewneck
+invigorate tank, wunder train tank,
+go getter, go getter pouch, go getter pouch mini
+lightweight gym sack, gym sack, gym sac
+drysense, license to train
+at ease => textured double knit, ease
+commission shorts => abc shorts
+boatnecks => boatneck
+soccer shorts => shorts
