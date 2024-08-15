@@ -41,13 +41,13 @@ def get_normalized_text(response, field_type, original_text):
                 elif isinstance(tokens, str):
                     current_texts = [tokens]
                 if current_texts:
-                    print(f"Current texts: {current_texts} and previous text: {previous_texts}")
+                    #print(f"Current texts: {current_texts} and previous text: {previous_texts}")
                     filter_changes[filter_name] = current_texts != previous_texts
                     # filter_changes[filter_name] = any(token != previous_text for token in current_texts)
                     previous_texts = current_texts  # Update previous_text for the next phase
 
     filter_changes["result"] = current_texts
-    print(append_true_keys(filter_changes))
+    #print(append_true_keys(filter_changes))
 
     return filter_changes
 

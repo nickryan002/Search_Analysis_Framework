@@ -124,29 +124,31 @@ def process_search_queries():
             tokens = search_phrase.split()
             tokens_in_dict = [token for token in tokens if token.lower() in shingles_dict]
 
-            entity_types = [shingles_dict[token.lower()][0][2] for token in tokens_in_dict]
-            entity_types_str = "/".join(entity_types)
+            # entity_types = [shingles_dict[token.lower()][0][2] for token in tokens_in_dict]
+            # entity_types_str = "/".join(entity_types)
+
+            entity_types = extract_dict_info(tokens, "entity_type")
 
             #FIRST PASS - NO NORMALIZATION APPLIED
 
-            if len(entity_types) > 1 and tokens == tokens_in_dict:        
+            if len(tokens) > 1 and len(entity_types.split("/")) > 1 and tokens == tokens_in_dict:        
                 if not catalog_match_checker.check_unnormalized_values_in_row(tokens_in_dict, shingles_dict):
-                    problematic_query_row = [search_phrase, "N", entity_types_str, "", visits, revenue]
+                    problematic_query_row = [search_phrase, "N", entity_types, "", visits, revenue]
 
                     #SECOND PASS - NORMALIZATION APPLIED
                     if catalog_match_checker.check_values_in_row(tokens_in_dict, shingles_dict):
-                        problematic_query_row = [search_phrase, "Y", entity_types_str, extract_all_filters(tokens_in_dict), visits, revenue]
+                        problematic_query_row = [search_phrase, "Y", entity_types, extract_dict_info(tokens_in_dict, "filter"), visits, revenue]
                     else:
-                        problematic_query_row = [search_phrase, "N", entity_types_str, extract_all_filters(tokens_in_dict), visits, revenue]
+                        problematic_query_row = [search_phrase, "N", entity_types, extract_dict_info(tokens_in_dict, "filter"), visits, revenue]
 
                     problematic_writer.writerow(problematic_query_row)
                     print(f"Problematic search query: {search_phrase}")
 
         print("Finished processing all search queries.")
 
-def extract_all_filters(tokens):
+def extract_dict_info(tokens, type):
     # Initialize a set to collect unique filters across all tokens
-    all_filters_set = set()
+    all_dict_info_set = set()
 
     # Iterate through each token in the list
     for token in tokens:
@@ -157,19 +159,24 @@ def extract_all_filters(tokens):
             # Iterate through each sublist
             for sublist in lists:
                 # Check if the last element is not an empty string
-                if sublist[-1]:
-                    # Add the last element to the set
-                    all_filters_set.add(sublist[-1])
+                if type == "entity_type":
+                    if sublist[2]:
+                        # Add the third element to the set
+                        all_dict_info_set.add(sublist[2])
+                if type == "filter":
+                    if sublist[-1]:
+                        # Add the last element to the set
+                        all_dict_info_set.add(sublist[-1])
 
     # Join the unique filters into a single string
-    final_result = "/".join(all_filters_set)
+    final_result = "/".join(all_dict_info_set)
 
     return final_result
 
 def main():
     shingles_dict_generator.read_csv_and_populate_shingles_dict(ENTITY_TABLE_CSV, shingles_dict)
-    write_dict_to_file(shingles_dict, 'dictionary.txt')
-    # #visits_revenue_aggregator.normalize_and_aggregate(LULU_TERMS_CSV, LULU_TERMS_AGGREGATED_CSV)
+    write_dict_to_file(shingles_dict, 'ShingleEntityMatcher/dictionary.txt')
+    # visits_revenue_aggregator.normalize_and_aggregate(LULU_TERMS_CSV, LULU_TERMS_AGGREGATED_CSV)
     initialize_csvs()
     process_search_queries()
     #process_synonyms.process_synonyms(shingles_dict)
