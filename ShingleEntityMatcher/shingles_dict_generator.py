@@ -72,7 +72,3 @@ def expand_shingles_with_normalization(shingles_dict):
 def append_true_keys(filter_changes):
     true_keys = [key for key, value in filter_changes.items() if value == True]
     return '/'.join(true_keys)
-
-# Print the expanded shingles dictionary
-for key, value in shingles_dict.items():
-    print(f"{key}: {value}")

@@ -5,13 +5,6 @@ import re
 solr_url = 'http://localhost:8983/solr/catalog_core'  # Replace with your Solr core URL
 solr = pysolr.Solr(solr_url, always_commit=True)
 
-# Sample shingles dictionary
-shingles_dict = {
-    'blue': [['blue', 'sku_colorGroup'], ['royal blue', 'sku_colorCodeDesc']],
-    'leggings': [['leggings', 'parentCategory_displayName'], ['cool leggings', 'collections']],
-    '25': [['25', 'sku_size']]
-}
-
 # Function to escape special characters in the query
 def escape_solr_query(value):
     return re.sub(r'([+\-&|!(){}[\]^"~*?:\\])', r'\\\1', value)
@@ -73,9 +66,3 @@ def check_unnormalized_values_in_row(values, shingles_dict):
     # Return True if there are any rows that match the query, otherwise False
     rows_found = len(results)
     return rows_found > 0
-
-# Example usage
-values_to_check = ["women", "energy", "pink"]
-result = check_values_in_row(values_to_check, shingles_dict)
-
-print(f'Result: {result}')  # Output: True or False

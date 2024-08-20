@@ -2,7 +2,6 @@ import csv
 from sortedcontainers import SortedDict
 import visits_revenue_aggregator
 import catalog_match_checker
-from datetime import datetime
 import shingles_dict_generator
 import process_synonyms
 

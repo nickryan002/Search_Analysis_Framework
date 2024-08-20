@@ -82,14 +82,3 @@ def get_normalized_result(response, field_type, original_text):
 def append_true_keys(filter_changes):
     true_keys = [key for key, value in filter_changes.items() if value == True]
     return '/'.join(true_keys)
-
-if __name__ == "__main__":
-    text_to_analyze = "shorts dresses 25\""
-    # response = normalize(text_to_analyze, 'dig_practice_char_syns_stem')
-    # print(f"Final result: {response}")
-
-    # response = get_raw_normalized_result(text_to_analyze, 'dig_practice_char_syns_stem')
-    # print(f"Raw result: {response}")
-
-    response = get_normalized_final_text(text_to_analyze, 'dig_practice_char_stem')
-    print(f"Final text result: {response}")
