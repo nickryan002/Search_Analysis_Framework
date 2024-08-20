@@ -7,7 +7,32 @@ def normalize(text_to_analyze, desired_field_type):
     field_type = desired_field_type
     analysis_result = analyze_text_HTTP(solr_url, core_name, field_type, text_to_analyze)
 
-    return get_normalized_text(analysis_result, field_type, text_to_analyze)
+    return get_normalized_result(analysis_result, field_type, text_to_analyze)
+
+def get_raw_normalized_result(text_to_analyze, desired_field_type):
+    solr_url = "http://localhost:8983/solr"
+    core_name = "catalog_core"
+    field_type = desired_field_type
+    analysis_result = analyze_text_HTTP(solr_url, core_name, field_type, text_to_analyze)
+
+    return analysis_result.get('analysis', {}).get('field_types', {}).get(field_type, {}).get('index', [])
+
+def get_normalized_final_text(text_to_analyze, desired_field_type):
+    solr_url = "http://localhost:8983/solr"
+    core_name = "catalog_core"
+    field_type = desired_field_type
+    analysis_result = analyze_text_HTTP(solr_url, core_name, field_type, text_to_analyze)
+
+    normalized_result = analysis_result.get('analysis', {}).get('field_types', {}).get(field_type, {}).get('index', [])
+
+    # Get the last filter in the JSON data
+    last_filter = normalized_result[-1]
+    
+    # Extract the 'text' fields from the last filter
+    texts = [token['text'] for token in list(last_filter.values())[0]]
+    
+    # Join the texts with a space separator
+    return ' '.join(texts)
 
 # Function to send a request to Solr's analysis endpoint to analyze the text
 def analyze_text_HTTP(solr_url, core_name, field_type, text_to_analyze):
@@ -23,10 +48,12 @@ def analyze_text_HTTP(solr_url, core_name, field_type, text_to_analyze):
     return response.json()
 
 # Function to extract the normalized text from Solr's analysis response
-def get_normalized_text(response, field_type, original_text):
+def get_normalized_result(response, field_type, original_text):
     analysis_result = response.get('analysis', {}).get('field_types', {}).get(field_type, {}).get('index', [])
     if not analysis_result:
         return {}
+    
+    print(analysis_result)
 
     filter_changes = {}
     previous_texts = [original_text]
@@ -57,6 +84,12 @@ def append_true_keys(filter_changes):
     return '/'.join(true_keys)
 
 if __name__ == "__main__":
-    text_to_analyze = "dresses"
-    response = normalize(text_to_analyze, 'dig_practice_char_syns_stem')
-    print(f"Final result: {response}")
+    text_to_analyze = "shorts dresses 25\""
+    # response = normalize(text_to_analyze, 'dig_practice_char_syns_stem')
+    # print(f"Final result: {response}")
+
+    # response = get_raw_normalized_result(text_to_analyze, 'dig_practice_char_syns_stem')
+    # print(f"Raw result: {response}")
+
+    response = get_normalized_final_text(text_to_analyze, 'dig_practice_char_stem')
+    print(f"Final text result: {response}")
