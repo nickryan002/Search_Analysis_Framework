@@ -95,3 +95,8 @@ def process_csv(input_csv, output_csv, list_a, list_b):
             best_row['Revenue'] = format_revenue(total_revenue)
             best_row['Rolled Up Queries'] = '/'.join(rolled_up_queries)
             writer.writerow(best_row)
+
+# Run the function with the sample lists
+# Example usage
+input_csv_path = 'ShingleEntityMatcher/problematic_searches_new.csv'  # Replace with the path to your CSV file
+rollup_queries(input_csv_path)

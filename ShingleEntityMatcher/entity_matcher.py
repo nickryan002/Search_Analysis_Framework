@@ -145,9 +145,9 @@ def process_search_queries():
 
         print("Finished processing all search queries.")
 
-def extract_dict_info(tokens, type):
-    # Initialize a set to collect unique filters across all tokens
-    all_dict_info_set = set()
+def extract_dict_info(tokens, info_type):
+    # Initialize a dictionary to map each entity type or filter to its associated tokens
+    info_to_tokens = {}
 
     # Iterate through each token in the list
     for token in tokens:
@@ -157,20 +157,48 @@ def extract_dict_info(tokens, type):
             lists = shingles_dict[token]
             # Iterate through each sublist
             for sublist in lists:
-                # Check if the last element is not an empty string
-                if type == "entity_type":
-                    if sublist[2]:
-                        # Add the third element to the set
-                        all_dict_info_set.add(sublist[2])
-                if type == "filter":
-                    if sublist[-1]:
-                        # Add the last element to the set
-                        all_dict_info_set.add(sublist[-1])
+                key_index = 2 if info_type == "entity_type" else -1
+                # Check if the key (entity type or filter) is not an empty string
+                if sublist[key_index]:
+                    key = sublist[key_index]
+                    # If the key is already in the dictionary, add the token to the set
+                    if key in info_to_tokens:
+                        info_to_tokens[key].add(token)
+                    else:
+                        # Otherwise, create a new entry with a set to avoid duplicates
+                        info_to_tokens[key] = {token}
 
-    # Join the unique filters into a single string
-    final_result = "/".join(all_dict_info_set)
+    # Create the final string with unique tokens in parentheses
+    final_result = "/".join([f"{key}({ '_'.join(sorted(info_to_tokens[key])) })" for key in info_to_tokens])
 
     return final_result
+
+# def extract_dict_info(tokens, type):
+#     # Initialize a set to collect unique filters across all tokens
+#     all_dict_info_set = set()
+
+#     # Iterate through each token in the list
+#     for token in tokens:
+#         # Check if the token exists in the dictionary
+#         if token in shingles_dict:
+#             # Get the list of lists associated with the token
+#             lists = shingles_dict[token]
+#             # Iterate through each sublist
+#             for sublist in lists:
+#                 # Check if the last element is not an empty string
+#                 if type == "entity_type":
+#                     if sublist[2]:
+#                         # Add the third element to the set
+#                         all_dict_info_set.add(sublist[2])
+#                 if type == "filter":
+#                     if sublist[-1]:
+#                         # Add the last element to the set
+#                         all_dict_info_set.add(sublist[-1])
+
+#     # Join the unique filters into a single string
+#     final_result = "/".join(all_dict_info_set)
+
+#     return final_result
 
 def main():
     shingles_dict_generator.read_csv_and_populate_shingles_dict(ENTITY_TABLE_CSV, shingles_dict)
