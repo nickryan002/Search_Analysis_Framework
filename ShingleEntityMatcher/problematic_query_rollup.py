@@ -55,8 +55,9 @@ def process_csv(input_csv, output_csv, list_a, list_b):
 
         visits_a = int(rows[a_index]['Visits'])
         revenue_a = normalize_revenue(rows[a_index]['Revenue'])
+        normalization_filters_a = rows[a_index]['Normalization Filters'].split('/')
 
-        aggregation_dict[normalized_query] = [a_index, visits_a, revenue_a, []]
+        aggregation_dict[normalized_query] = [a_index, visits_a, revenue_a, [], set(normalization_filters_a)]
 
         for b_index, query_b in enumerate(list_b):
             queries_b_split = query_b.split('/')
@@ -64,6 +65,7 @@ def process_csv(input_csv, output_csv, list_a, list_b):
                 matched_row = rows[b_index]
                 visits_b = int(matched_row['Visits'])
                 revenue_b = normalize_revenue(matched_row['Revenue'])
+                normalization_filters = matched_row['Normalization Filters'].split('/')
 
                 if (matched_row['Problematic Search Query'] == "swiftly tech shirts"):
                     print("hmm")         
@@ -75,9 +77,10 @@ def process_csv(input_csv, output_csv, list_a, list_b):
                     aggregation_dict[normalized_query][1] += visits_b  # Aggregate visits
                     aggregation_dict[normalized_query][2] += revenue_b  # Aggregate revenue
                     aggregation_dict[normalized_query][3].append(rows[b_index]["Problematic Search Query"])  # Add the matched query to the list
+                    aggregation_dict[normalized_query][4].update(normalization_filters)  # Add normalization filters
 
-                else:
-                    aggregation_dict[normalized_query] = [a_index, visits_a, revenue_a, []]
+                # else:
+                #     aggregation_dict[normalized_query] = [a_index, visits_a, revenue_a, []]
 
                 # Add the b_index to the rolled_up_indices set to ignore it later
                 rolled_up_indices.add(b_index)
@@ -89,10 +92,16 @@ def process_csv(input_csv, output_csv, list_a, list_b):
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
 
-        for subquery, (best_index, total_visits, total_revenue, rolled_up_queries) in aggregation_dict.items():
+        for subquery, (best_index, total_visits, total_revenue, rolled_up_queries, all_filters) in aggregation_dict.items():
             best_row = rows[best_index].copy()
             best_row['Visits'] = str(total_visits)
             best_row['Revenue'] = format_revenue(total_revenue)
+
+            # Combine all normalization filters and update the best row's normalization filters
+            combined_filters = '/'.join(sorted(filter(None, all_filters)))
+            best_row['Normalization Filters'] = combined_filters
+
+            # Update the best row with the rolled-up queries
             best_row['Rolled Up Queries'] = '/'.join(rolled_up_queries)
             writer.writerow(best_row)
 

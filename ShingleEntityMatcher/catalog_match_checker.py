@@ -10,7 +10,7 @@ def escape_solr_query(value):
     return re.sub(r'([+\-&|!(){}[\]^"~*?:\\])', r'\\\1', value)
 
 # Function to check if a set of values are in the same row
-def check_values_in_row(values, shingles_dict):
+def check_normalized_values_in_row(values, shingles_dict):
 
     # Create Solr query parts for each value
     query_parts = []

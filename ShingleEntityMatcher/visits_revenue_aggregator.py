@@ -12,8 +12,13 @@ def normalize_and_aggregate(input_filename, output_filename):
     iteration_count = 0
     
     with open(input_filename, mode='r', newline='', encoding='utf-8') as infile:
-        reader = csv.reader(infile)
-        headers = next(reader)  # Read the header row
+        reader = csv.DictReader(infile)
+
+        # Remove BOM from the first column name if present
+        if reader.fieldnames and reader.fieldnames[0].startswith('\ufeff'):
+            reader.fieldnames[0] = reader.fieldnames[0].replace('\ufeff', '')
+
+        headers = reader.fieldnames
 
         for row in reader:
             iteration_count += 1
@@ -22,12 +27,11 @@ def normalize_and_aggregate(input_filename, output_filename):
                 sys.stdout.write(f"\rQueries processed: {iteration_count}")
                 sys.stdout.flush()
             
-            search_query = row[0]
-            normalized_result = normalizer.normalize(search_query, 'dig_practice_char_syns_stem')
-            normalized_search_query = normalized_result['result']
-            #TODO: Handle synonyms
-            visits = int(row[4])
-            revenue = Decimal(row[8].replace('$', '').replace(',', ''))
+            search_query = row['Search Query']
+            normalized_search_query = normalizer.get_normalized_final_text(search_query, 'dig_practice_char')
+            #normalized_search_query = normalized_result['result']
+            visits = int(row['Visits'])
+            revenue = Decimal(row['Revenue'].replace('$', '').replace(',', ''))
             
             # Aggregate visits and revenue based on the normalized search query
             aggregated_data[normalized_search_query][0] += visits
@@ -36,22 +40,25 @@ def normalize_and_aggregate(input_filename, output_filename):
     # Write the aggregated data to a new CSV file
     with open(output_filename, mode='w', newline='', encoding='utf-8') as outfile:
         print("Writing normalized and aggregated queries to new csv...")
-        writer = csv.writer(outfile)
-        writer.writerow(headers)  # Write the header row
+        writer = csv.DictWriter(outfile, fieldnames=headers)
+        writer.writeheader()  # Write the header row
 
         with open(input_filename, mode='r', newline='', encoding='utf-8') as infile:
-            reader = csv.reader(infile)
-            next(reader)  # Skip the header row
+            reader = csv.DictReader(infile)
+
+            # Remove BOM from the first column name if present
+            if reader.fieldnames and reader.fieldnames[0].startswith('\ufeff'):
+                reader.fieldnames[0] = reader.fieldnames[0].replace('\ufeff', '')
+
             for row in reader:
-                search_query = row[0]
-                normalized_result = normalizer.normalize(search_query, 'dig_practice_char_syns_stem')
-                normalized_search_query = normalized_result['result']
-                #TODO: Handle synonyms
+                search_query = row['Search Query']
+                normalized_search_query = normalizer.get_normalized_final_text(search_query, 'dig_practice_char')
+                #normalized_search_query = normalized_result['result']
                 if normalized_search_query in aggregated_data:
                     visits, revenue = aggregated_data[normalized_search_query]
-                    row[0] = normalized_search_query
-                    row[4] = visits
-                    row[8] = f"${revenue:,.2f}"
+                    row['Search Query'] = normalized_search_query
+                    row['Visits'] = visits
+                    row['Revenue'] = revenue
                     writer.writerow(row)
                     # Remove the entry after writing it to avoid duplicates
                     del aggregated_data[normalized_search_query]

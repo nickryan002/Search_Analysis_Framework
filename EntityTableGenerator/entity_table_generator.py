@@ -35,8 +35,8 @@ def remove_duplicates(input_csv, config_file, output_csv):
     output_df.to_csv(output_csv, index=False)
 
 if __name__ == "__main__":
-    input_csv = 'partial_catalog.csv'       # Path to the input CSV file
-    config_file = 'config.txt'    # Path to the config file
-    output_csv = 'output.csv'     # Path to the output CSV file
+    input_csv = 'EntityTableGenerator/simplified_catalog.csv'       # Path to the input CSV file
+    config_file = 'EntityTableGenerator/config.txt'    # Path to the config file
+    output_csv = 'EntityTableGenerator/entity_table_new.csv'     # Path to the output CSV file
     
     remove_duplicates(input_csv, config_file, output_csv)

@@ -17,6 +17,7 @@ def convert_to_dynamic_fields(document):
 # Function to read search queries and ingest them into Solr in batches
 def read_and_ingest_to_solr(filename, batch_size=100):
     delete_all_documents()
+    print("Reading data from catalog and ingesting into Solr...")
     documents = []
     with open(filename, mode='r', newline='', encoding='utf-8') as file:
         reader = csv.reader(file)
@@ -28,7 +29,6 @@ def read_and_ingest_to_solr(filename, batch_size=100):
             if len(documents) >= batch_size:
                 solr.add(documents)
                 documents = []
-                print(f"{batch_size} documents ingested")
     # Ingest any remaining documents
     if documents:
         solr.add(documents)

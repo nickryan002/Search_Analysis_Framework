@@ -6,10 +6,10 @@ import shingles_dict_generator
 import process_synonyms
 
 # Global variables for real filenames - Uncomment/comment to use
-ENTITY_TABLE_CSV = 'ShingleEntityMatcher/entity_table.csv'
+ENTITY_TABLE_CSV = 'ShingleEntityMatcher/entity_table_new.csv'
 MATCHED_TABLE_CSV = 'ShingleEntityMatcher/MatchedTable.csv'
 UNMATCHED_TABLE_CSV = 'ShingleEntityMatcher/UnmatchedTable.csv'
-LULU_TERMS_CSV = 'ShingleEntityMatcher/lulu_terms.csv'
+LULU_TERMS_CSV = 'ClientData/lululemon search terms - may-aug.csv'
 LULU_TERMS_AGGREGATED_CSV = 'ShingleEntityMatcher/lulu_terms_Aggregated.csv'
 SYNONYMS_TXT = 'ShingleEntityMatcher/lulu_solr_synonyms.txt'
 SYNONYM_MATCHES_CSV = 'ShingleEntityMatcher/SynonymExpansions.csv'
@@ -59,7 +59,7 @@ def write_matched_shingles(writer, shingle, search_query, visits, revenue):
 
     for entry in shingles_dict[lower_shingle]:
         entity = entry[0]
-        entity_type = entry[1]
+        entity_type = entry[2]
         if entity_type not in matched_entities:
             matched_entities[entity_type] = []
         matched_entities[entity_type].append(entity)
@@ -108,14 +108,21 @@ def initialize_csvs():
 def process_search_queries():
     with open(LULU_TERMS_AGGREGATED_CSV, mode='r', newline='', encoding='utf-8') as search_queries_file, \
          open(PROBLEMATIC_SEARCHES_CSV, mode='a', newline='', encoding='utf-8') as problematic_file:
-        reader = csv.reader(search_queries_file)
+        reader = csv.DictReader(search_queries_file)
+
+        # Remove BOM from the first column name if present
+        if reader.fieldnames and reader.fieldnames[0].startswith('\ufeff'):
+            reader.fieldnames[0] = reader.fieldnames[0].replace('\ufeff', '')
+        
         problematic_writer = csv.writer(problematic_file)
-        next(reader)  # Skip the header
+        # Print the headers to check for any issues
+        print("Headers:", reader.fieldnames)
+
         print("Processing search queries...")
         for row in reader:
-            search_phrase = row[0]
-            visits = row[4]
-            revenue = row[8]
+            search_phrase = row['Search Query']
+            visits = row['Visits']
+            revenue = row['Revenue']
             shingles = shingles_dict_generator.generate_shingles(search_phrase)
             write_to_matched_unmatched_csvs(search_phrase, shingles, visits, revenue)
 
@@ -123,25 +130,21 @@ def process_search_queries():
             tokens = search_phrase.split()
             tokens_in_dict = [token for token in tokens if token.lower() in shingles_dict]
 
-            # entity_types = [shingles_dict[token.lower()][0][2] for token in tokens_in_dict]
-            # entity_types_str = "/".join(entity_types)
-
             entity_types = extract_dict_info(tokens, "entity_type")
 
             #FIRST PASS - NO NORMALIZATION APPLIED
-
             if len(tokens) > 1 and len(entity_types.split("/")) > 1 and tokens == tokens_in_dict:        
                 if not catalog_match_checker.check_unnormalized_values_in_row(tokens_in_dict, shingles_dict):
                     problematic_query_row = [search_phrase, "N", entity_types, "", visits, revenue]
 
                     #SECOND PASS - NORMALIZATION APPLIED
-                    if catalog_match_checker.check_values_in_row(tokens_in_dict, shingles_dict):
+                    if catalog_match_checker.check_normalized_values_in_row(tokens_in_dict, shingles_dict):
                         problematic_query_row = [search_phrase, "Y", entity_types, extract_dict_info(tokens_in_dict, "filter"), visits, revenue]
                     else:
                         problematic_query_row = [search_phrase, "N", entity_types, extract_dict_info(tokens_in_dict, "filter"), visits, revenue]
 
                     problematic_writer.writerow(problematic_query_row)
-                    print(f"Problematic search query: {search_phrase}")
+                    print(f"Processed search query: {search_phrase}")
 
         print("Finished processing all search queries.")
 
@@ -203,7 +206,7 @@ def extract_dict_info(tokens, info_type):
 def main():
     shingles_dict_generator.read_csv_and_populate_shingles_dict(ENTITY_TABLE_CSV, shingles_dict)
     write_dict_to_file(shingles_dict, 'ShingleEntityMatcher/dictionary.txt')
-    # visits_revenue_aggregator.normalize_and_aggregate(LULU_TERMS_CSV, LULU_TERMS_AGGREGATED_CSV)
+    #visits_revenue_aggregator.normalize_and_aggregate(LULU_TERMS_CSV, LULU_TERMS_AGGREGATED_CSV)
     initialize_csvs()
     process_search_queries()
     #process_synonyms.process_synonyms(shingles_dict)

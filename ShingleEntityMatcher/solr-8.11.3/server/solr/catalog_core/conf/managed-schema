@@ -44,6 +44,7 @@
             replacement="'"/>
       <tokenizer class="solr.WhitespaceTokenizerFactory"/>
       <filter class="solr.PatternReplaceFilterFactory" pattern='"' replacement="" replace="all"/>
+      <filter class="solr.PatternReplaceFilterFactory" pattern="&amp;" replacement="and" replace="all"/>
       <filter class="solr.LowerCaseFilterFactory"/>
       <filter class="solr.EnglishMinimalStemFilterFactory"/>
       <filter class="solr.PorterStemFilterFactory"/>
@@ -60,6 +61,7 @@
             replacement="'"/>
       <tokenizer class="solr.WhitespaceTokenizerFactory"/>
       <filter class="solr.PatternReplaceFilterFactory" pattern='"' replacement="" replace="all"/>
+      <filter class="solr.PatternReplaceFilterFactory" pattern="&amp;" replacement="and" replace="all"/>
       <filter class="solr.LowerCaseFilterFactory"/>
       <filter class="solr.SynonymGraphFilterFactory" expand="false" ignoreCase="true" synonyms="synonyms.txt"/>
       <filter class="solr.EnglishMinimalStemFilterFactory"/>
