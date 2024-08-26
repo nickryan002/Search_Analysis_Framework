@@ -1,15 +1,32 @@
 import pandas as pd
 import re
 
-def clean_data(input_csv, output_csv):
-    # Read the input CSV
+def clean_data(input_csv: str, output_csv: str) -> None:
+    """
+    Cleans the data from the input CSV file and writes the cleaned data to an output CSV file.
+
+    Args:
+        input_csv (str): Path to the input CSV file.
+        output_csv (str): Path to the output CSV file where cleaned data will be saved.
+    """
+    # Read the input CSV into a DataFrame
     df = pd.read_csv(input_csv)
 
+    # Get the total number of rows to process
     total_rows = len(df)
     print(f"Total rows to process: {total_rows}")
 
-    # Function to clean and lowercase text
-    def clean_and_lowercase(text, replace_colon=False):
+    def clean_and_lowercase(text: str, replace_colon: bool = False) -> str:
+        """
+        Cleans and lowercases the given text.
+
+        Args:
+            text (str): The text to clean and lowercase.
+            replace_colon (bool): Whether to replace '::::' with '/' in the text.
+
+        Returns:
+            str: The cleaned and lowercased text.
+        """
         if pd.isna(text):
             return ""
         text = str(text).lower()
@@ -17,17 +34,38 @@ def clean_data(input_csv, output_csv):
             text = text.replace('::::', '/')
         return text
 
-    # Function to remove URLs and lowercase text
-    def remove_urls_and_lowercase(text):
+    def remove_urls_and_lowercase(text: str) -> str:
+        """
+        Removes URLs from the text and lowercases it.
+
+        Args:
+            text (str): The text from which to remove URLs.
+
+        Returns:
+            str: The text with URLs removed and lowercased.
+        """
         if pd.isna(text):
             return ""
+        # Use regex to remove URLs
         text = re.sub(r'\|https?:\/\/.*?(?=\||$)', '', text)
         return text.lower()
 
-    # Function to process each row and print progress
-    def process_row(row, index):
+    def process_row(row: pd.Series, index: int) -> pd.Series:
+        """
+        Processes a single row of the DataFrame by cleaning and normalizing its fields.
+
+        Args:
+            row (pd.Series): The row to process.
+            index (int): The index of the row in the DataFrame.
+
+        Returns:
+            pd.Series: The processed row.
+        """
+        # Print progress for every 1000 rows processed
         if index % 1000 == 0:
             print(f"Processed {index} rows out of {total_rows}")
+        
+        # Clean and normalize specific fields in the row
         row['parentCategory_displayName'] = clean_and_lowercase(row.get('parentCategory_displayName', '')).replace(' & ', '/')
         row['sku_colorGroup'] = remove_urls_and_lowercase(row.get('sku_colorGroup', ''))
         row['sku_colorGroup_fr'] = remove_urls_and_lowercase(row.get('sku_colorGroup_fr', ''))
@@ -39,12 +77,13 @@ def clean_data(input_csv, output_csv):
         row['collections'] = clean_and_lowercase(row.get('collections', ''))
         row['sku_colorCodeDesc'] = clean_and_lowercase(row.get('sku_colorCodeDesc', ''))
         row['product_inseam'] = clean_and_lowercase(row.get('product_inseam', ''))
+
         return row
 
-    # Apply the processing function to each row
+    # Apply the processing function to each row in the DataFrame
     df = df.apply(lambda row: process_row(row, df.index.get_loc(row.name)), axis=1)
 
-    # Select the columns to write to the new CSV
+    # Select the columns to keep in the final cleaned DataFrame
     columns_to_keep = [
         'gender', 'parentCategory_displayName', 'sku_size', 'product_topsLength_s',
         'collections', 'sku_colorCodeDesc', 'sku_colorGroup', 'sku_colorGroup_fr',
@@ -52,12 +91,13 @@ def clean_data(input_csv, output_csv):
     ]
     cleaned_df = df[columns_to_keep]
 
-    # Write the cleaned data to the output CSV
+    # Write the cleaned data to the output CSV file
     cleaned_df.to_csv(output_csv, index=False, na_rep='')
 
     print(f"Processed {total_rows} rows successfully.")
 
 # Example usage
-input_csv = 'CatalogNormalizer/full_catalog.csv'
-output_csv = 'CatalogNormalizer/simplified_catalog.csv'
-clean_data(input_csv, output_csv)
+if __name__ == "__main__":
+    input_csv = 'CatalogNormalizer/full_catalog.csv'
+    output_csv = 'CatalogNormalizer/simplified_catalog.csv'
+    clean_data(input_csv, output_csv)
