@@ -1,11 +1,7 @@
 import csv
-import requests
 from sortedcontainers import SortedDict
 import normalizer
 import copy
-
-# Global SortedDict to store shingles with their corresponding details
-shingles_dict = SortedDict()
 
 # Read from a CSV file and populate the shingles dictionary
 def read_csv_and_populate_shingles_dict(filename, shingles_dict):

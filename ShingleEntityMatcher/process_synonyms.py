@@ -1,8 +1,16 @@
 import csv
+import shingles_dict_generator
+from sortedcontainers import SortedDict
 
+ENTITY_TABLE_CSV = 'ShingleEntityMatcher/entity_table_new.csv'
 SYNONYMS_TXT = 'ShingleEntityMatcher/lulu_solr_synonyms.txt'
 SYNONYM_MATCHES_CSV = 'ShingleEntityMatcher/SynonymExpansions.csv'
-REWRITTEN_SYNONYMS_TXT = 'ShingleEntityMatcher/RewrittenSynonyms.txt'
+REWRITTEN_SYNONYMS_TXT = 'ShingleEntityMatcher/synonyms.txt'
+
+# Global SortedDict to store shingles with their corresponding details
+shingles_dict = SortedDict()
+
+shingles_dict_generator.read_csv_and_populate_shingles_dict(ENTITY_TABLE_CSV, shingles_dict)
 
 def process_synonyms(shingles_dict: dict) -> None:
     """
@@ -73,3 +81,5 @@ def get_match_info(left_term: str, right_terms: list, shingles_dict: dict) -> tu
             return entry[1], entry[2]  # match_type, entity_type
     
     return "", ""  # Default to empty strings if no match found
+
+process_synonyms(shingles_dict)

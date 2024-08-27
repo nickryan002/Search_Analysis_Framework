@@ -3,7 +3,7 @@ from sortedcontainers import SortedDict
 import visits_revenue_aggregator
 import catalog_match_checker
 import shingles_dict_generator
-import process_synonyms
+import problematic_query_rollup
 
 # Global Constants for filenames
 ENTITY_TABLE_CSV = 'ShingleEntityMatcher/entity_table_new.csv'
@@ -13,7 +13,8 @@ LULU_TERMS_CSV = 'ClientData/lululemon search terms - may-aug.csv'
 LULU_TERMS_AGGREGATED_CSV = 'ShingleEntityMatcher/lulu_terms_Aggregated.csv'
 SYNONYMS_TXT = 'ShingleEntityMatcher/lulu_solr_synonyms.txt'
 SYNONYM_MATCHES_CSV = 'ShingleEntityMatcher/SynonymExpansions.csv'
-PROBLEMATIC_SEARCHES_CSV = 'ShingleEntityMatcher/problematic_searches_new.csv'
+PROBLEMATIC_SEARCHES_CSV = 'ShingleEntityMatcher/potentially_problematic_searches.csv'
+ROLLED_UP_PROBLEMATIC_SEARCHES_CSV = 'ShingleEntityMatcher/rolled_up_searches.csv'
 
 # Global SortedDict to store shingles with their corresponding details
 shingles_dict = SortedDict()
@@ -84,7 +85,7 @@ def write_matched_shingles(writer: csv.writer, shingle: str, search_query: str, 
     writer.writerow([
         shingle, partial_matches_str, "partial" if partial_matches else "full", 
         entity_types_str, search_query, visits, revenue,
-        "yes" if entity_overlap or entity_type_overlap else "no",
+        "Y" if entity_overlap or entity_type_overlap else "N",
         len({item for sublist in matched_entities.values() for item in sublist}),
         len(matched_entities)
     ])
@@ -110,6 +111,33 @@ def initialize_csvs() -> None:
             "Problematic Search Query", "Legitimate", "Catalog Field", 
             "Normalization Filters", "Visits", "Revenue"
         ])
+
+def extract_dict_info(tokens: list, info_type: str) -> str:
+    """
+    Extract information (entity type or filter) from the shingles dictionary based on tokens.
+
+    Args:
+        tokens (list): List of tokens to extract information from.
+        info_type (str): Type of information to extract ("entity_type" or "filter").
+
+    Returns:
+        str: A string representation of the extracted information.
+    """
+    info_to_tokens = {}
+
+    for token in tokens:
+        if token in shingles_dict:
+            lists = shingles_dict[token]
+            for sublist in lists:
+                key_index = 2 if info_type == "entity_type" else -1
+                if sublist[key_index]:
+                    info_to_tokens.setdefault(sublist[key_index], set()).add(token)
+
+    # Create the final string with unique tokens in parentheses
+    final_result = "/".join([f"{key}({ '_'.join(sorted(info_to_tokens[key])) })" for key in info_to_tokens])
+
+    return final_result
+
 
 def process_search_queries() -> None:
     """
@@ -174,33 +202,6 @@ def process_search_queries() -> None:
 
         print("Finished processing all search queries.")
 
-
-def extract_dict_info(tokens: list, info_type: str) -> str:
-    """
-    Extract information (entity type or filter) from the shingles dictionary based on tokens.
-
-    Args:
-        tokens (list): List of tokens to extract information from.
-        info_type (str): Type of information to extract ("entity_type" or "filter").
-
-    Returns:
-        str: A string representation of the extracted information.
-    """
-    info_to_tokens = {}
-
-    for token in tokens:
-        if token in shingles_dict:
-            lists = shingles_dict[token]
-            for sublist in lists:
-                key_index = 2 if info_type == "entity_type" else -1
-                if sublist[key_index]:
-                    info_to_tokens.setdefault(sublist[key_index], set()).add(token)
-
-    # Create the final string with unique tokens in parentheses
-    final_result = "/".join([f"{key}({ '_'.join(sorted(info_to_tokens[key])) })" for key in info_to_tokens])
-
-    return final_result
-
 def main() -> None:
     """
     Main function to execute the pipeline for processing search queries and writing results.
@@ -210,11 +211,8 @@ def main() -> None:
     visits_revenue_aggregator.normalize_and_aggregate(LULU_TERMS_CSV, LULU_TERMS_AGGREGATED_CSV)
     initialize_csvs()
     process_search_queries()
-    process_synonyms.process_synonyms(shingles_dict)
+    problematic_query_rollup.rollup_queries(PROBLEMATIC_SEARCHES_CSV, ROLLED_UP_PROBLEMATIC_SEARCHES_CSV)
 
 if __name__ == "__main__":
     main()
-
-
-
     
