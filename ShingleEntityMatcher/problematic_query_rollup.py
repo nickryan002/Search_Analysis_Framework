@@ -11,7 +11,7 @@ def rollup_queries(input_csv_path, output_csv_path):
         # Skip the header
         next(csvreader)
 
-        print("Normalizing + expanding problematic search queries...")
+        print ("Rolling up similar queries...")
 
         for row in csvreader:
             if row:
@@ -23,9 +23,6 @@ def rollup_queries(input_csv_path, output_csv_path):
                 normalized_query_expanded = synonym_string_list_generator.reconstruct_strings(normalized_query_expanded_result)
                 normalized_queries_expanded.append('/'.join(normalized_query_expanded))
 
-        print ("Normalization completed.")
-
-        print ("Rolling up similar queries...")
         process_csv(input_csv_path, output_csv_path, normalized_queries, normalized_queries_expanded)
         print ("Roll up completed.")
 
@@ -75,9 +72,6 @@ def process_csv(input_csv, output_csv, list_a, list_b):
                     aggregation_dict[normalized_query][2] += revenue_b  # Aggregate revenue
                     aggregation_dict[normalized_query][3].append(rows[b_index]["Problematic Search Query"])  # Add the matched query to the list
                     aggregation_dict[normalized_query][4].update(normalization_filters)  # Add normalization filters
-
-                # else:
-                #     aggregation_dict[normalized_query] = [a_index, visits_a, revenue_a, []]
 
                 # Add the b_index to the rolled_up_indices set to ignore it later
                 rolled_up_indices.add(b_index)

@@ -16,7 +16,7 @@ def clean_data(input_csv: str, output_csv: str) -> None:
     total_rows = len(df)
     print(f"Total rows to process: {total_rows}")
 
-    def clean_and_lowercase(text: str, replace_colon: bool = False) -> str:
+    def clean_and_lowercase(text: str) -> str:
         """
         Cleans and lowercases the given text.
 
@@ -30,8 +30,10 @@ def clean_data(input_csv: str, output_csv: str) -> None:
         if pd.isna(text):
             return ""
         text = str(text).lower()
-        if replace_colon:
-            text = text.replace('::::', '/')
+        text = text.replace('::::', ' / ')
+        text = text.replace('-', ' ')
+        text = text.replace('*', '')
+        text = text.replace('|', '')
         return text
 
     def remove_urls_and_lowercase(text: str) -> str:
@@ -69,14 +71,22 @@ def clean_data(input_csv: str, output_csv: str) -> None:
         row['parentCategory_displayName'] = clean_and_lowercase(row.get('parentCategory_displayName', '')).replace(' & ', '/')
         row['sku_colorGroup'] = remove_urls_and_lowercase(row.get('sku_colorGroup', ''))
         row['sku_colorGroup_fr'] = remove_urls_and_lowercase(row.get('sku_colorGroup_fr', ''))
-        row['product_activity'] = clean_and_lowercase(row.get('product_activity', ''), replace_colon=True)
-        row['product_customAttribute4'] = clean_and_lowercase(row.get('product_customAttribute4', ''), replace_colon=True)
+        row['product_activity'] = clean_and_lowercase(row.get('product_activity', ''))
+        row['product_customAttribute4'] = clean_and_lowercase(row.get('product_customAttribute4', ''))
         row['gender'] = clean_and_lowercase(row.get('gender', ''))
         row['sku_size'] = clean_and_lowercase(row.get('sku_size', ''))
         row['product_topsLength_s'] = clean_and_lowercase(row.get('product_topsLength_s', ''))
         row['collections'] = clean_and_lowercase(row.get('collections', ''))
         row['sku_colorCodeDesc'] = clean_and_lowercase(row.get('sku_colorCodeDesc', ''))
         row['product_inseam'] = clean_and_lowercase(row.get('product_inseam', ''))
+        row['product_displayName'] = clean_and_lowercase(row.get('product_displayName', ''))
+        row['product_feel'] = clean_and_lowercase(row.get('product_feel', ''))
+        row['product_fit'] = clean_and_lowercase(row.get('product_fit', ''))
+        row['product_function'] = clean_and_lowercase(row.get('product_function', ''))
+        row['sku_sizeType_ss'] = clean_and_lowercase(row.get('sku_sizeType_ss', ''))
+        row['product_rise_s'] = clean_and_lowercase(row.get('product_rise_s', ''))
+        row['product_title'] = clean_and_lowercase(row.get('product_title', ''))
+        row['product_gender'] = clean_and_lowercase(row.get('product_gender', ''))
 
         return row
 
@@ -87,7 +97,9 @@ def clean_data(input_csv: str, output_csv: str) -> None:
     columns_to_keep = [
         'gender', 'parentCategory_displayName', 'sku_size', 'product_topsLength_s',
         'collections', 'sku_colorCodeDesc', 'sku_colorGroup', 'sku_colorGroup_fr',
-        'product_inseam', 'product_activity', 'product_customAttribute4'
+        'product_inseam', 'product_activity', 'product_customAttribute4', 'product_displayName', 
+        'product_feel', 'product_fit', 'product_function', 'sku_sizeType_ss', 'product_rise_s', 
+        'product_title', 'product_gender'
     ]
     cleaned_df = df[columns_to_keep]
 

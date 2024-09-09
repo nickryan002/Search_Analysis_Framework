@@ -4,8 +4,8 @@ from sortedcontainers import SortedDict
 
 ENTITY_TABLE_CSV = 'ShingleEntityMatcher/entity_table_new.csv'
 SYNONYMS_TXT = 'ShingleEntityMatcher/lulu_solr_synonyms.txt'
-SYNONYM_MATCHES_CSV = 'ShingleEntityMatcher/SynonymExpansions.csv'
-REWRITTEN_SYNONYMS_TXT = 'ShingleEntityMatcher/synonyms.txt'
+SYNONYM_MATCHES_CSV = 'ShingleEntityMatcher/Output/SynonymExpansions.csv'
+REWRITTEN_SYNONYMS_TXT = 'ShingleEntityMatcher/Output/synonyms.txt'
 
 # Global SortedDict to store shingles with their corresponding details
 shingles_dict = SortedDict()

@@ -7,14 +7,14 @@ import problematic_query_rollup
 
 # Global Constants for filenames
 ENTITY_TABLE_CSV = 'ShingleEntityMatcher/entity_table_new.csv'
-MATCHED_TABLE_CSV = 'ShingleEntityMatcher/MatchedTable.csv'
-UNMATCHED_TABLE_CSV = 'ShingleEntityMatcher/UnmatchedTable.csv'
+MATCHED_TABLE_CSV = 'ShingleEntityMatcher/Output/MatchedTable.csv'
+UNMATCHED_TABLE_CSV = 'ShingleEntityMatcher/Output/UnmatchedTable.csv'
 LULU_TERMS_CSV = 'ClientData/lululemon search terms - may-aug.csv'
 LULU_TERMS_AGGREGATED_CSV = 'ShingleEntityMatcher/lulu_terms_Aggregated.csv'
 SYNONYMS_TXT = 'ShingleEntityMatcher/lulu_solr_synonyms.txt'
 SYNONYM_MATCHES_CSV = 'ShingleEntityMatcher/SynonymExpansions.csv'
-PROBLEMATIC_SEARCHES_CSV = 'ShingleEntityMatcher/potentially_problematic_searches.csv'
-ROLLED_UP_PROBLEMATIC_SEARCHES_CSV = 'ShingleEntityMatcher/rolled_up_searches.csv'
+PROBLEMATIC_SEARCHES_CSV = 'ShingleEntityMatcher/Output/potentially_problematic_searches.csv'
+ROLLED_UP_PROBLEMATIC_SEARCHES_CSV = 'ShingleEntityMatcher/Output/rolled_up_searches.csv'
 
 # Global SortedDict to store shingles with their corresponding details
 shingles_dict = SortedDict()
@@ -208,7 +208,7 @@ def main() -> None:
     """
     shingles_dict_generator.read_csv_and_populate_shingles_dict(ENTITY_TABLE_CSV, shingles_dict)
     write_dict_to_file(shingles_dict, 'ShingleEntityMatcher/dictionary.txt')
-    visits_revenue_aggregator.normalize_and_aggregate(LULU_TERMS_CSV, LULU_TERMS_AGGREGATED_CSV)
+    #visits_revenue_aggregator.normalize_and_aggregate(LULU_TERMS_CSV, LULU_TERMS_AGGREGATED_CSV)
     initialize_csvs()
     process_search_queries()
     problematic_query_rollup.rollup_queries(PROBLEMATIC_SEARCHES_CSV, ROLLED_UP_PROBLEMATIC_SEARCHES_CSV)
